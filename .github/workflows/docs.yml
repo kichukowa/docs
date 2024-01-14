@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
-        run: git config --system --add safe.directory $GITHUB_WORKSPACE
+        run: sudo git config --system --add safe.directory $GITHUB_WORKSPACE
       - uses: actions/setup-python@v4
         with:
           python-version: 3.10
@@ -22,5 +22,5 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force
+      - run: sudo pip install mkdocs-material
+      - run: sudo mkdocs gh-deploy --force
