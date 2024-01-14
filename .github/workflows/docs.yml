@@ -14,4 +14,4 @@ jobs:
 
     steps:
     - name: Test Action
-      run: apt update
+      run: sudo apt update
