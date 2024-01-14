@@ -19,7 +19,7 @@ jobs:
         sudo apt install git -y
 
     - name: Git Config
-      run: git config --system --add safe.directory $GITHUB_WORKSPACE
+      run: sudo git config --system --add safe.directory $GITHUB_WORKSPACE
 
     - name: Checkout Master
       uses: actions/checkout@v3
