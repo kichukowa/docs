@@ -27,9 +27,10 @@ jobs:
         persist-credentials: true
 
     - name: Setup Python 3.10
-      run: |
-        sudo apt install python -y
-        sudo apt install pip -y
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    - run:  python -version
 
     - name: Build nad Deploy
       run: |
