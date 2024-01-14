@@ -34,5 +34,5 @@ jobs:
 
     - name: Build nad Deploy
       run: |
-        sudo pip install mkdocs-material -y
+        sudo pip install mkdocs-material
         sudo mkdocs gh-deploy --force
