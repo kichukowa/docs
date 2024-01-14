@@ -1,0 +1,17 @@
+name: Build doc using MkDocs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  build:
+    name: Build and Deploy
+    runs on: ubuntu-latest
+
+    steps:
+    - name: Test Action
+      run: apt update
