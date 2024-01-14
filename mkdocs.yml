@@ -1,0 +1,7 @@
+site_name: TEST NAME
+nav:
+    - 'About': about/about.md
+
+theme: 'material'
+
+docs_dir: docs
