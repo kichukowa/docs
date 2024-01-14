@@ -1,7 +1,6 @@
 site_name: TEST NAME
+theme:
+  name: material
 nav:
     - 'About': about/about.md
-
-theme: 'material'
-
 docs_dir: docs
