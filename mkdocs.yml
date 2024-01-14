@@ -3,6 +3,6 @@ theme:
   name: material
 
 nav:
-  - Home: docs/index.md
-  - About: docs/about.md
-  - Projects: docs/projects.md
+  - Home: index.md
+  - About: about.md
+  - Projects: projects.md
