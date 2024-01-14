@@ -1,6 +1,3 @@
-site_name: TEST NAME
+site_name: My Docs
 theme:
   name: material
-nav:
-    - 'About': about/about.md
-docs_dir: docs
