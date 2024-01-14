@@ -13,5 +13,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Test Action
-      run: sudo apt update
+    - name: Install Git
+      run: |
+        sudo apt update
+        sudo apt install git -y
+
+    - name: Git Config
+      run: git config --system --add safe.directory $GITHUB_WORKSPACE
+
+    - name: Checkout Master
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: true
+
+    - name: Setup Python 3.10
+      run: |
+        sudo apt install python -y
+        sudo apt install pip -y
+
+    - name: Build nad Deploy
+      run: |
+        sudo pip install mkdocs-material -y
+        sudo mkdocs gh-deploy --force
